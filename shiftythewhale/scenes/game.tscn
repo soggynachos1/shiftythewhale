@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d3f7rvwpdfydp"]
+
+[ext_resource type="PackedScene" uid="uid://bjf1tr2lkfr4q" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://jrboote1evi8" path="res://scenes/wall.tscn" id="2_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://cccntg5i8w8bc" path="res://scenes/background.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://cyukkbvy55gph" path="res://scenes/bomb.tscn" id="4_lbhrr"]
+
+[node name="game" type="Node2D" unique_id=811712846]
+
+[node name="wall" parent="." unique_id=1880258842 instance=ExtResource("2_lnu2h")]
+position = Vector2(-2, 0)
+
+[node name="background" parent="wall" unique_id=371500716 instance=ExtResource("3_lnu2h")]
+position = Vector2(905, -38.999985)
+scale = Vector2(1.4031323, 1.8426945)
+
+[node name="enemies" type="Node2D" parent="." unique_id=1270929523]
+
+[node name="bomb" parent="enemies" unique_id=1774367691 instance=ExtResource("4_lbhrr")]
+
+[node name="player" parent="." unique_id=81432111 instance=ExtResource("1_uwrxv")]
+position = Vector2(60, 360)

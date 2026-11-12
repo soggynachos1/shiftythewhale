@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cccntg5i8w8bc"]
+
+[ext_resource type="Texture2D" uid="uid://xibnp4mfi303" path="res://assets/blue_place_bkgd.jpg" id="1_bkp1e"]
+
+[node name="background" type="Node2D" unique_id=371500716]
+
+[node name="blue" type="Sprite2D" parent="." unique_id=1470089685]
+position = Vector2(321, 135)
+texture = ExtResource("1_bkp1e")
