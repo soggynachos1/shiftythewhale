@@ -11,7 +11,7 @@
 position = Vector2(-2, 0)
 
 [node name="background" parent="wall" unique_id=371500716 instance=ExtResource("3_lnu2h")]
-position = Vector2(905, -38.999985)
+position = Vector2(814, -51)
 scale = Vector2(1.4031323, 1.8426945)
 
 [node name="enemies" type="Node2D" parent="." unique_id=1270929523]
