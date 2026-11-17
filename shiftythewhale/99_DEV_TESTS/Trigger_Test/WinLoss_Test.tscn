@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://32x5ghi778i5"]
+
+[ext_resource type="Script" uid="uid://puddi00ftyn8" path="res://99_DEV_TESTS/Trigger_Test/win_loss_test.gd" id="1_dx3g1"]
+
+[node name="WinLossTest" type="Node" unique_id=768837838]
+script = ExtResource("1_dx3g1")
