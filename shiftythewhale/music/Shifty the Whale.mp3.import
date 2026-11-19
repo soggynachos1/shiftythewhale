@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d17pc1ihk7hk6"
+path="res://.godot/imported/Shifty the Whale.mp3-747664c83630dac3bb74fe2d6d7ff637.mp3str"
+
+[deps]
+
+source_file="res://music/Shifty the Whale.mp3"
+dest_files=["res://.godot/imported/Shifty the Whale.mp3-747664c83630dac3bb74fe2d6d7ff637.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
