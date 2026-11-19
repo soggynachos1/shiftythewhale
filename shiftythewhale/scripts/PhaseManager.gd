@@ -1,4 +1,4 @@
-extends Node #I think this will connect to the node
+extends AnimatedSprite2D #I think this will connect to the node
 #that will be use dfor 
 #the backgorund im assuming(?)
 
