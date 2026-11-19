@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctos56skdor0j"
-path="res://.godot/imported/blue.png-ecd045ee907d791a536702d2dd0075e6.ctex"
+uid="uid://d0dxlxors66mq"
+path="res://.godot/imported/blue_rock.png-7b7b38f8d62509560409a80ea9f80bf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background/blue.png"
-dest_files=["res://.godot/imported/blue.png-ecd045ee907d791a536702d2dd0075e6.ctex"]
+source_file="res://tilelayer_parts/blue_rock.png"
+dest_files=["res://.godot/imported/blue_rock.png-7b7b38f8d62509560409a80ea9f80bf5.ctex"]
 
 [params]
 
