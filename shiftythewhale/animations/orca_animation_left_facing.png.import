@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tqgoulmiee6p"
-path="res://.godot/imported/sand.png-29edd2202b0f8122a6cd554a12498bf5.ctex"
+uid="uid://de7gedsfhlh88"
+path="res://.godot/imported/orca_animation_left_facing.png-8450a439eb85168f5b05365a1f100354.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilelayer_parts/sand.png"
-dest_files=["res://.godot/imported/sand.png-29edd2202b0f8122a6cd554a12498bf5.ctex"]
+source_file="res://animations/orca_animation_left_facing.png"
+dest_files=["res://.godot/imported/orca_animation_left_facing.png-8450a439eb85168f5b05365a1f100354.ctex"]
 
 [params]
 
