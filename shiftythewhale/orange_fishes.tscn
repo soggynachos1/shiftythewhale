@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://n63ng853qj4k"]
+
+[ext_resource type="Texture2D" uid="uid://cbneddv3etlmo" path="res://animations/orange_fish_1.png" id="1_lpbvh"]
+[ext_resource type="Texture2D" uid="uid://c2625dmimjxpb" path="res://animations/orange_fish_3.png" id="2_drapq"]
+[ext_resource type="Texture2D" uid="uid://bt5feqjoebygx" path="res://animations/orange_fish_2.png" id="3_8rvva"]
+[ext_resource type="Texture2D" uid="uid://b2qekduf7olua" path="res://animations/orange_fish_4.png" id="4_li36j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opjg5"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lpbvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_drapq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8rvva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_li36j")
+}],
+"loop": 1,
+"name": &"orange_fishes",
+"speed": 2.0
+}]
+
+[node name="orange_fishes" type="AnimatedSprite2D" unique_id=375600179]
+sprite_frames = SubResource("SpriteFrames_opjg5")
+animation = &"orange_fishes"
+autoplay = "orange_fishes"

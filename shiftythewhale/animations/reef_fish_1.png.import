@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bau1kjr7wuj0d"
-path="res://.godot/imported/reef_fish_1.png-ca5ee47c3b0137b94e5c5f7393413147.ctex"
+path="res://.godot/imported/reef_fish_1.png-078d0ba234f7e60b91bd6184ea0330a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/reef_fish_1.png"
-dest_files=["res://.godot/imported/reef_fish_1.png-ca5ee47c3b0137b94e5c5f7393413147.ctex"]
+source_file="res://animations/reef_fish_1.png"
+dest_files=["res://.godot/imported/reef_fish_1.png-078d0ba234f7e60b91bd6184ea0330a7.ctex"]
 
 [params]
 

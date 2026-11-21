@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://chumnc74qktlr"]
+
+[ext_resource type="Texture2D" uid="uid://bau1kjr7wuj0d" path="res://animations/reef_fish_1.png" id="1_y7tjq"]
+[ext_resource type="Texture2D" uid="uid://57xyfyy0l212" path="res://animations/yellow_fish_2.png" id="2_ikaki"]
+[ext_resource type="Texture2D" uid="uid://ce8hsu3etxyyn" path="res://animations/yellow_fish_3.png" id="3_h8krs"]
+[ext_resource type="Texture2D" uid="uid://d2crptrpe2mfs" path="res://animations/yellow_fish_4.png" id="4_ju2t4"]
+[ext_resource type="Texture2D" uid="uid://cpmssnudrbryw" path="res://animations/yellow_fish_5.png" id="5_gyokx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opjg5"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_y7tjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ikaki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h8krs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ju2t4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gyokx")
+}],
+"loop": 1,
+"name": &"yellow_fishes",
+"speed": 2.0
+}]
+
+[node name="yellow_fishes" type="AnimatedSprite2D" unique_id=1414336654]
+sprite_frames = SubResource("SpriteFrames_opjg5")
+animation = &"yellow_fishes"
+autoplay = "yellow_fishes"
+frame_progress = 0.70506024
