@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crsagm2550kja"
-path="res://.godot/imported/corner_rock.png-5514dca9a6c03ab4a42819471a0b8939.ctex"
+uid="uid://bd36wppdacs6w"
+path="res://.godot/imported/corral.png-ff56404d65f125b6c37b17a4c3aca3f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilelayer_parts/corner_rock.png"
-dest_files=["res://.godot/imported/corner_rock.png-5514dca9a6c03ab4a42819471a0b8939.ctex"]
+source_file="res://tilesets/corral.png"
+dest_files=["res://.godot/imported/corral.png-ff56404d65f125b6c37b17a4c3aca3f9.ctex"]
 
 [params]
 

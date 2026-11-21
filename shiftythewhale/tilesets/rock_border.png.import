@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3pv5of0vcb8i"
-path="res://.godot/imported/sun.png-22ced795e696bbbb7541e65d47af18e2.ctex"
+uid="uid://bv7vtl3ntkho8"
+path="res://.godot/imported/rock_border.png-767ca178d2320b6c83f6afc6e8402664.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilelayer_parts/sun.png"
-dest_files=["res://.godot/imported/sun.png-22ced795e696bbbb7541e65d47af18e2.ctex"]
+source_file="res://tilesets/rock_border.png"
+dest_files=["res://.godot/imported/rock_border.png-767ca178d2320b6c83f6afc6e8402664.ctex"]
 
 [params]
 

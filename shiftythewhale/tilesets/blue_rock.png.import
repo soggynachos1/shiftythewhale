@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd36wppdacs6w"
-path="res://.godot/imported/corral.png-9c4cdc70fffb9107a718042ede32ed64.ctex"
+uid="uid://d0dxlxors66mq"
+path="res://.godot/imported/blue_rock.png-2d0c139f8823102093d99384e7fa2eee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilelayer_parts/corral.png"
-dest_files=["res://.godot/imported/corral.png-9c4cdc70fffb9107a718042ede32ed64.ctex"]
+source_file="res://tilesets/blue_rock.png"
+dest_files=["res://.godot/imported/blue_rock.png-2d0c139f8823102093d99384e7fa2eee.ctex"]
 
 [params]
 
