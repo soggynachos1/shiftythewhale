@@ -1073,7 +1073,6 @@ texture = ExtResource("5_0tnpc")
 7:4/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kvpfn"]
-load_path = "res://.godot/imported/sand.png-29edd2202b0f8122a6cd554a12498bf5.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0tnpc"]
 texture = SubResource("CompressedTexture2D_kvpfn")

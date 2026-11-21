@@ -2,32 +2,39 @@ extends CharacterBody2D
 class_name Player
 
 
-var my_variable = Vector2(10, 8)
 var speed = 300.0
 
-var spawn_point = Vector2(60, 360)
 	
+ 
+@onready var anim_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 
-func _physics_process(_delta: float) -> void:
-	var direction = Vector2(0,0)
+func _physics_process(delta: float):
+	var direction = Input.get_vector("move_down","move_left","move_right","move_up")
+	
 	
 	if Input.is_action_pressed("move_right"):
+		
 		direction.x = 1
 		
+		
 	if Input.is_action_pressed("move_left"):
+		
 		direction.x = -1
+	
+		
+		
+			
+			
 		
 	if Input.is_action_pressed("move_up"):
 		direction.y = -1
 	if Input.is_action_pressed("move_down"):
 		direction.y = 1
-	
-	direction = direction.normalized()
-	
-	
 	velocity = direction * speed
+	
+	
+	
+	
 	move_and_slide()
-
-func reset_player():
-	global_position = spawn_point
+	

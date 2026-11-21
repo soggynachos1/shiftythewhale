@@ -36,6 +36,8 @@ region = Rect2(0, 2142, 3375, 1071)
 atlas = ExtResource("2_g2els")
 region = Rect2(0, 0, 3375, 1071)
 
+[sub_resource type="GDScript" id="GDScript_ah77g"]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_tkg2h"]
 animations = [{
 "frames": [],
@@ -57,7 +59,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_y4r1p")
 }],
 "loop": 1,
-"name": &"idle_orca_left_facing",
+"name": &"left",
 "speed": 2.0
 }, {
 "frames": [{
@@ -77,9 +79,10 @@ animations = [{
 "texture": SubResource("AtlasTexture_tuyoq")
 }],
 "loop": 1,
-"name": &"idle_orca_right_facing",
+"name": &"right",
 "speed": 2.0
 }]
+script = SubResource("GDScript_ah77g")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vjjt6"]
 radius = 122.81155
@@ -91,10 +94,8 @@ script = ExtResource("1_g2els")
 [node name="orca" type="AnimatedSprite2D" parent="." unique_id=102359899]
 scale = Vector2(0.17916493, 0.19558877)
 sprite_frames = SubResource("SpriteFrames_tkg2h")
-animation = &"idle_orca_left_facing"
-autoplay = "idle_orca_right_facing"
-frame = 3
-frame_progress = 0.16194351
+animation = &"right"
+autoplay = "right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1607734158]
 scale = Vector2(1, 0.2837838)
