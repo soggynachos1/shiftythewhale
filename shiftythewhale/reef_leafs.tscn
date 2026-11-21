@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cdo70yx6ijlji"]
+
+[ext_resource type="Texture2D" uid="uid://cjmhtyuwyp62y" path="res://animations/reef_leaf.png" id="1_58raa"]
+[ext_resource type="Texture2D" uid="uid://dl0oqjcus8gkc" path="res://animations/reef_leaf_3.png" id="2_eg8ft"]
+[ext_resource type="Texture2D" uid="uid://cnlos3sqtlqlv" path="res://animations/reef_leaf_2.png" id="3_vm7lv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opjg5"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_58raa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_eg8ft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vm7lv")
+}],
+"loop": 1,
+"name": &"reef_leafs",
+"speed": 1.0
+}]
+
+[node name="reef_leafs" type="AnimatedSprite2D" unique_id=1582359818]
+sprite_frames = SubResource("SpriteFrames_opjg5")
+animation = &"reef_leafs"
+autoplay = "reef_leafs"
+frame_progress = 0.61237955

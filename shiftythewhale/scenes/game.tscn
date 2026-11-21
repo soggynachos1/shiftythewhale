@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bau1kjr7wuj0d" path="res://tilesets/reef_fish_1.png" id="7_dinhu"]
 [ext_resource type="Texture2D" uid="uid://ck1jxopg5if0j" path="res://tilesets/sky.png" id="8_dinhu"]
 [ext_resource type="Texture2D" uid="uid://b84y8nd6v0shp" path="res://tilesets/more_sky.png" id="9_kvuet"]
+[ext_resource type="PackedScene" uid="uid://cdo70yx6ijlji" path="res://reef_leafs.tscn" id="13_kvuet"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p57ef"]
 texture = ExtResource("4_iywne")
@@ -1392,3 +1393,24 @@ position = Vector2(0, 57)
 scale = Vector2(118.4841, -0.97854185)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
+
+[node name="reef_leafs" parent="." unique_id=1582359818 instance=ExtResource("13_kvuet")]
+position = Vector2(1562, 1554)
+scale = Vector2(0.5942122, 0.65151143)
+frame_progress = 0.7081358
+
+[node name="reef_leafs2" parent="reef_leafs" unique_id=1247655044 instance=ExtResource("13_kvuet")]
+position = Vector2(-642.8679, -429.76996)
+rotation = 0.8150688
+scale = Vector2(0.6034538, 0.9802535)
+frame_progress = 0.7081358
+
+[node name="reef_leafs3" parent="reef_leafs" unique_id=1864195561 instance=ExtResource("13_kvuet")]
+position = Vector2(-344.9946, 0)
+scale = Vector2(0.62806565, 0.5388491)
+frame_progress = 0.7081358
+
+[node name="reef_leafs4" parent="reef_leafs" unique_id=1141316906 instance=ExtResource("13_kvuet")]
+position = Vector2(711.8669, 371.44394)
+rotation = 0.3333579
+frame_progress = 0.7081358
