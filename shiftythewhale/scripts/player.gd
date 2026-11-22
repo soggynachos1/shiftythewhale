@@ -28,6 +28,7 @@ func _physics_process(delta: float):
 		direction.y = -1
 		
 	if Input.is_action_pressed("move_down"):
+		direction.x = 0
 		direction.y = 1
 		
 	velocity = direction * speed
