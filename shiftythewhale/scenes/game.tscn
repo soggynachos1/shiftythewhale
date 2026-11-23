@@ -11904,7 +11904,7 @@ scale = Vector2(0.5598394, 0.66013634)
 sprite_frames = SubResource("SpriteFrames_opjg5")
 animation = &"reef_leaf_2"
 autoplay = "reef_leaf_2"
-frame_progress = 0.23773077
+frame_progress = 0.84837997
 
 [node name="reef_leafs_3" type="AnimatedSprite2D" parent="sea_tilemap/reef_leafs_6" unique_id=2103880334]
 position = Vector2(1162.2821, 664.9391)
@@ -12024,7 +12024,7 @@ scale = Vector2(0.40258026, 0.56440496)
 sprite_frames = SubResource("SpriteFrames_opjg5")
 animation = &"reef_leaf_2"
 autoplay = "reef_leaf_2"
-frame_progress = 0.46319315
+frame_progress = 0.073853105
 
 [node name="reef_leafs_7" type="AnimatedSprite2D" parent="sea_tilemap/reef_leafs_3" unique_id=914901552]
 position = Vector2(-255.53711, -233.23291)
