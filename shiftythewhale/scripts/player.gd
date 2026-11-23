@@ -9,11 +9,11 @@ var speed = 300.0
 @onready var anim_sprite: AnimatedSprite2D = $orca
 
 
-func _physics_process(delta: float):
+
+#physics this is where all movement goes
+func _physics_process(_delta: float):
 	var direction = Input.get_vector("move_down","move_left","move_right","move_up")
 
-
-	
 	if Input.is_action_pressed("move_right"):
 		anim_sprite.play("right")
 		direction.x = 1
@@ -34,7 +34,9 @@ func _physics_process(delta: float):
 	velocity = direction * speed
 	direction.normalized()
 	
-	
-	
 	move_and_slide()
+	
+	
+	
+	
 	
