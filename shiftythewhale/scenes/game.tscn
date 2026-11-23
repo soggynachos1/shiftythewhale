@@ -3758,6 +3758,8 @@ texture = ExtResource("19_e1j6l")
 [sub_resource type="TileSet" id="TileSet_vjjt6"]
 sources/0 = SubResource("TileSetAtlasSource_suyxu")
 
+[sub_resource type="TileSet" id="TileSet_u5vpd"]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p57ef"]
 texture = ExtResource("4_iywne")
 0:0/0 = 0
@@ -7857,6 +7859,9 @@ tile_map_data = PackedByteArray("AAABAAAAAAAAAAAAAAABAAEAAAAAAAEAAAABAAIAAAAAAAI
 enabled = false
 tile_set = SubResource("TileSet_vjjt6")
 
+[node name="planets_and_galaxies" type="TileMapLayer" parent="dimension_changed" unique_id=692048968]
+tile_set = SubResource("TileSet_u5vpd")
+
 [node name="sea_tilemap" type="TileMapLayer" parent="." unique_id=1339987242]
 position = Vector2(1054.9999, 509.00006)
 scale = Vector2(2.024263, 1.5395163)
@@ -7864,167 +7869,168 @@ tile_map_data = PackedByteArray("AADg/+z/CQABAAAAAADg/+3/CQABAAEAAADg/+7/CQABAAI
 tile_set = SubResource("TileSet_opjg5")
 
 [node name="green_tilemap2" type="TileMapLayer" parent="sea_tilemap" unique_id=1360369858]
-scale = Vector2(1.0166454, 1.1026425)
+scale = Vector2(1.0166456, 1.1026427)
 tile_map_data = PackedByteArray("AAAFACYABAAAAAEAAAAFACUABAAAAAAAAAAPACkABAABAAEAAAAPACgABAABAAAAAAAdADUABAAAAAEAAAAdADQABAAAAAAAAAAeADUABAABAAEAAAAeADQABAABAAAAAAAFADYABAAAAAEAAFAFADcABAABAAEAAFAFADIABAAAAAEAAFAFADMABAABAAEAAFADAD4ABAAAAAEAAAAFACAABAABAAAAAAAGACAABAABAAEAAAAEACEABAAAAAEAAAAEACAABAAAAAAAAAAFACEABAABAAEAAAAcADMABAAAAAEAAAAcADIABAAAAAAAAAAdADMABAABAAEAAAAdADIABAABAAAAAAADAD0ABAAAAAAAAAAEAD4ABAABAAEAAAAEAD0ABAABAAAAAAAEADQABAAAAAAAAFAEADUABAABAAAAAFADADQABAAAAAEAAFADADUABAABAAEAAFACACsABAAAAAEAADACACwABAAAAAAAADABACsABAABAAEAADABACwABAABAAAAADADACcABAABAAEAAGADACgABAAAAAEAAGACACcABAABAAAAAGACACgABAAAAAAAAGD//yMABAABAAEAAGD//yQABAAAAAEAAGD+/yMABAABAAAAAGD+/yQABAAAAAAAAGACADMABAABAAAAAAACADQABAABAAEAAAABADMABAAAAAAAAAABADQABAAAAAEAAAAAADMABAABAAAAAAAAADQABAABAAEAAAD//zMABAAAAAAAAAD//zQABAAAAAEAAAAAACsABAABAAAAAAAAACwABAABAAEAAAD//ysABAAAAAAAAAD//ywABAAAAAEAAAD9/y4ABAABAAAAAAD9/y8ABAABAAEAAAD8/y4ABAAAAAAAAAD8/y8ABAAAAAEAAACmADIAAgAAAAAAAACnADIAAgABAAAAAAALACQAEQAAAAAAAAALACUAEQAAAAEAAAAMACQAEQABAAAAAAAMACUAEQABAAEAAAAGACMAEQAAAAEAAAAGACIAEQAAAAAAAAAHACIAEQABAAAAAAAVACcAEQAAAAAAABAUACcAEQABAAAAABAVACgAEQAAAAEAABAUACgAEQABAAEAABACABoAEQAAAAAAABABABoAEQABAAAAABACABsAEQAAAAEAABABABsAEQABAAEAABASACYAEQABAAAAAAARACYAEQAAAAAAAAASACcAEQABAAEAAAARACcAEQAAAAEAAAAHACMAEQABAAEAAAACABMAEQAAAAAAAAACABQAEQAAAAEAAAADABMAEQABAAAAAAADABQAEQABAAEAAAAZACsAEQAAAAAAAAAZACwAEQAAAAEAAAAaACsAEQABAAAAAAAaACwAEQABAAEAAAAFAC0AEQAAAAAAABAEAC0AEQABAAAAABAFAC4AEQAAAAEAABAEAC4AEQABAAEAABAMADkAEQAAAAAAABALADkAEQABAAAAABAMADoAEQAAAAEAABALADoAEQABAAEAABAJADgAEQAAAAAAABAIADgAEQABAAAAABAJADkAEQAAAAEAABAIADkAEQABAAEAABAQADoAEQABAAAAAAAPADoAEQAAAAAAAAAQADsAEQABAAEAAAAPADsAEQAAAAEAAAAIACMAEwAAAAAAAAAIACQAEwAAAAEAAAAAAA4AEwAAAAAAAAAAAA8AEwAAAAEAAAAFAB0AEwAAAAAAAAAFAB4AEwAAAAEAAAAXACkAEwAAAAAAAAAXACoAEwAAAAEAAAATACYAEwAAAAAAAAATACcAEwAAAAEAAAAJADoAEwAAAAAAAAAJADsAEwAAAAEAAAAEADAAEwAAAAAAAAAEADEAEwAAAAEAAAAhADUAEwAAAAAAAAAhADYAEwAAAAEAAAALACYAEwAAAAAAAAALACcAEwAAAAEAAAAFACMAEwAAAAAAAAAFACQAEwAAAAEAAAACACAAEwAAAAAAAAACACEAEwAAAAEAAAAAABYAEwAAAAAAAAAAABcAEwAAAAEAAAACABAAEwAAAAAAAAACABEAEwAAAAEAAAAAABwAEwAAAAAAAAAAAB0AEwAAAAEAAAAGACgAEwAAAAAAAAAGACkAEwAAAAEAAAABAC4AEwAAAAAAAAABAC8AEwAAAAEAAAAEADkAEwAAAAAAAAAEADoAEwAAAAEAAAADACoAEQAAAAAAAAADACsAEQAAAAEAAAAEACoAEQABAAAAAAAEACsAEQABAAEAAAACADEAEQAAAAAAAAACADIAEQAAAAEAAAADADEAEQABAAAAAAADADIAEQABAAEAAAAGADgAEQAAAAAAAAAGADkAEQAAAAEAAAAHADgAEQABAAAAAAAHADkAEQABAAEAAAACACMAEQAAAAAAAAACACQAEQAAAAEAAAADACMAEQABAAAAAAADACQAEQABAAEAAAAAACYABAAAAAAAAAAAACcABAAAAAEAAAABACYABAABAAAAAAABACcABAABAAEAAAACADcABAAAAAAAAAACADgABAAAAAEAAAADADcABAABAAAAAAADADgABAABAAEAAAAGACUABAABAAAAAAAGACYABAABAAEAAAAAABMABAAAAAAAAAAAABQABAAAAAEAAAABABMABAABAAAAAAABABQABAABAAEAAAD//xEABAAAAAAAAAD//xIABAAAAAEAAAAAABEABAABAAAAAAAAABIABAABAAEAAAD9/xAABAAAAAAAAAD9/xEABAAAAAEAAAD+/xAABAABAAAAAAD+/xEABAABAAEAAAD+/wwABAAAAAAAAAD+/w0ABAAAAAEAAAD//wwABAABAAAAAAD//w0ABAABAAEAAAA=")
 tile_set = SubResource("TileSet_opjg5")
 
-[node name="music_main" type="AudioStreamPlayer2D" parent="." unique_id=746191029]
-stream = ExtResource("5_iywne")
-volume_db = 9.391
-autoplay = true
+[node name="yellow_fishes2" parent="sea_tilemap" unique_id=1797453618 instance=ExtResource("15_ir15t")]
+position = Vector2(468.81268, 767.7737)
+scale = Vector2(0.81882805, 0.7549687)
 
-[node name="reef_leafs" parent="." unique_id=1582359818 instance=ExtResource("13_kvuet")]
-position = Vector2(1562, 1554)
-scale = Vector2(0.5942122, 0.65151143)
+[node name="yellow_fishes2" parent="sea_tilemap/yellow_fishes2" unique_id=407068311 instance=ExtResource("15_ir15t")]
+position = Vector2(-89.28986, -194.44443)
+
+[node name="yellow_fishes3" parent="sea_tilemap/yellow_fishes2" unique_id=1245901035 instance=ExtResource("15_ir15t")]
+position = Vector2(-153.84401, 36.995937)
+
+[node name="yellow_fishes4" parent="sea_tilemap/yellow_fishes2" unique_id=709878755 instance=ExtResource("15_ir15t")]
+position = Vector2(-170.13338, -178.09734)
+
+[node name="yellow_fishes5" parent="sea_tilemap/yellow_fishes2" unique_id=369247009 instance=ExtResource("15_ir15t")]
+position = Vector2(-55.50451, -64.52808)
+
+[node name="yellow_fishes6" parent="sea_tilemap/yellow_fishes2" unique_id=82171091 instance=ExtResource("15_ir15t")]
+position = Vector2(-89.28984, -130.7768)
+
+[node name="yellow_fishes7" parent="sea_tilemap/yellow_fishes2" unique_id=2022874344 instance=ExtResource("15_ir15t")]
+position = Vector2(-114.025604, 144.54254)
+flip_h = true
+
+[node name="yellow_fishes8" parent="sea_tilemap/yellow_fishes2" unique_id=341360350 instance=ExtResource("15_ir15t")]
+position = Vector2(-186.42279, -248.64795)
+flip_h = true
+
+[node name="reef_leafs" parent="sea_tilemap" unique_id=1582359818 instance=ExtResource("13_kvuet")]
+position = Vector2(250.46161, 678.78467)
+scale = Vector2(0.29354498, 0.42319232)
 frame_progress = 0.15858804
 
-[node name="reef_leafs2" parent="reef_leafs" unique_id=1247655044 instance=ExtResource("13_kvuet")]
+[node name="reef_leafs2" parent="sea_tilemap/reef_leafs" unique_id=1247655044 instance=ExtResource("13_kvuet")]
 position = Vector2(-642.8679, -429.76996)
 rotation = 0.8150688
 scale = Vector2(0.6034538, 0.9802535)
 frame_progress = 0.7081358
 
-[node name="reef_leafs3" parent="reef_leafs" unique_id=1864195561 instance=ExtResource("13_kvuet")]
+[node name="reef_leafs3" parent="sea_tilemap/reef_leafs" unique_id=1864195561 instance=ExtResource("13_kvuet")]
 position = Vector2(-344.9946, 0)
 scale = Vector2(0.62806565, 0.5388491)
 frame_progress = 0.7081358
 
-[node name="reef_leafs4" parent="reef_leafs" unique_id=1141316906 instance=ExtResource("13_kvuet")]
+[node name="reef_leafs4" parent="sea_tilemap/reef_leafs" unique_id=1141316906 instance=ExtResource("13_kvuet")]
 position = Vector2(698.4037, 345.35077)
 rotation = 0.0837758
 scale = Vector2(0.6546994, 0.6550643)
 frame_progress = 0.7081358
 
-[node name="reef_leafs5" parent="reef_leafs" unique_id=401067278 instance=ExtResource("13_kvuet")]
+[node name="reef_leafs5" parent="sea_tilemap/reef_leafs" unique_id=401067278 instance=ExtResource("13_kvuet")]
 position = Vector2(-557.04016, -867.2143)
 rotation = 0.0837758
 scale = Vector2(0.6546994, 0.6550643)
 frame_progress = 0.7081358
 
-[node name="reef_leafs6" parent="reef_leafs" unique_id=669963819 instance=ExtResource("13_kvuet")]
+[node name="reef_leafs6" parent="sea_tilemap/reef_leafs" unique_id=669963819 instance=ExtResource("13_kvuet")]
 position = Vector2(-1162.8843, -1264.7515)
 rotation = 0.0837758
 scale = Vector2(0.6546994, 0.6550643)
 frame_progress = 0.7081358
 
-[node name="orange_fishes" parent="." unique_id=375600179 instance=ExtResource("14_trtic")]
-position = Vector2(1530.2899, 1049.3901)
-rotation = -0.116937056
-scale = Vector2(0.1531658, 0.14918566)
+[node name="orange_fishes" parent="sea_tilemap" unique_id=375600179 instance=ExtResource("14_trtic")]
+position = Vector2(234.79657, 351.01297)
+rotation = -0.15325055
+scale = Vector2(0.07603941, 0.0966258)
+skew = 0.06414509
 flip_h = true
 
-[node name="orange_fishes5" parent="orange_fishes" unique_id=18077308 instance=ExtResource("14_trtic")]
+[node name="orange_fishes5" parent="sea_tilemap/orange_fishes" unique_id=18077308 instance=ExtResource("14_trtic")]
 position = Vector2(-1496.063, -1347.3123)
 rotation = 0.11693704
 
-[node name="orange_fishes7" parent="orange_fishes" unique_id=2096176927 instance=ExtResource("14_trtic")]
+[node name="orange_fishes7" parent="sea_tilemap/orange_fishes" unique_id=2096176927 instance=ExtResource("14_trtic")]
 position = Vector2(-774.0315, -433.4441)
 rotation = 0.11693704
 flip_h = true
 
-[node name="orange_fishes2" parent="orange_fishes" unique_id=295102548 instance=ExtResource("14_trtic")]
+[node name="orange_fishes2" parent="sea_tilemap/orange_fishes" unique_id=295102548 instance=ExtResource("14_trtic")]
 position = Vector2(217.51202, 4080.6309)
 rotation = 0.116937056
 
-[node name="orange_fishes3" parent="orange_fishes" unique_id=1425637072 instance=ExtResource("14_trtic")]
+[node name="orange_fishes3" parent="sea_tilemap/orange_fishes" unique_id=1425637072 instance=ExtResource("14_trtic")]
 position = Vector2(-1339.4686, 1149.5128)
 rotation = -0.23212878
 
-[node name="orange_fishes4" parent="orange_fishes" unique_id=1284073131 instance=ExtResource("14_trtic")]
+[node name="orange_fishes4" parent="sea_tilemap/orange_fishes" unique_id=1284073131 instance=ExtResource("14_trtic")]
 position = Vector2(-1586.8164, -315.85132)
 rotation = -0.116937056
 flip_h = true
 
-[node name="orange_fishes6" parent="orange_fishes" unique_id=1737000595 instance=ExtResource("14_trtic")]
+[node name="orange_fishes6" parent="sea_tilemap/orange_fishes" unique_id=1737000595 instance=ExtResource("14_trtic")]
 position = Vector2(-1279.029, 610.08923)
 rotation = 0.116937056
 flip_h = true
 
-[node name="orange_fishes2" parent="." unique_id=747993013 instance=ExtResource("14_trtic")]
-position = Vector2(2076, 1379.0001)
-scale = Vector2(0.1531658, 0.14918566)
+[node name="orange_fishes2" parent="sea_tilemap" unique_id=747993013 instance=ExtResource("14_trtic")]
+position = Vector2(504.38123, 565.1127)
+scale = Vector2(0.07566498, 0.09690425)
 flip_h = true
 
-[node name="orange_fishes5" parent="orange_fishes2" unique_id=477362148 instance=ExtResource("14_trtic")]
+[node name="orange_fishes5" parent="sea_tilemap/orange_fishes2" unique_id=477362148 instance=ExtResource("14_trtic")]
 position = Vector2(-1496.063, -1347.3123)
 rotation = 0.11693704
 
-[node name="orange_fishes7" parent="orange_fishes2" unique_id=488402650 instance=ExtResource("14_trtic")]
+[node name="orange_fishes7" parent="sea_tilemap/orange_fishes2" unique_id=488402650 instance=ExtResource("14_trtic")]
 position = Vector2(-774.0315, -433.4441)
 rotation = 0.11693704
 flip_h = true
 
-[node name="orange_fishes2" parent="orange_fishes2" unique_id=2092779108 instance=ExtResource("14_trtic")]
+[node name="orange_fishes2" parent="sea_tilemap/orange_fishes2" unique_id=2092779108 instance=ExtResource("14_trtic")]
 position = Vector2(217.51202, 4080.6309)
 rotation = 0.116937056
 
-[node name="orange_fishes3" parent="orange_fishes2" unique_id=1560679874 instance=ExtResource("14_trtic")]
+[node name="orange_fishes3" parent="sea_tilemap/orange_fishes2" unique_id=1560679874 instance=ExtResource("14_trtic")]
 position = Vector2(-1339.4686, 1149.5128)
 rotation = -0.23212878
 
-[node name="orange_fishes4" parent="orange_fishes2" unique_id=1023466358 instance=ExtResource("14_trtic")]
+[node name="orange_fishes4" parent="sea_tilemap/orange_fishes2" unique_id=1023466358 instance=ExtResource("14_trtic")]
 position = Vector2(-1586.8164, -315.85132)
 rotation = -0.116937056
 flip_h = true
 
-[node name="orange_fishes6" parent="orange_fishes2" unique_id=568660543 instance=ExtResource("14_trtic")]
+[node name="orange_fishes6" parent="sea_tilemap/orange_fishes2" unique_id=568660543 instance=ExtResource("14_trtic")]
 position = Vector2(-1279.029, 610.08923)
 rotation = 0.116937056
 flip_h = true
 
-[node name="yellow_fishes" parent="." unique_id=1414336654 instance=ExtResource("15_ir15t")]
-position = Vector2(1486, 1160.0001)
-scale = Vector2(1.657523, 1.1622865)
+[node name="yellow_fishes" parent="sea_tilemap" unique_id=1414336654 instance=ExtResource("15_ir15t")]
+position = Vector2(212.91705, 422.8602)
+scale = Vector2(0.81882805, 0.7549687)
 
-[node name="yellow_fishes2" parent="yellow_fishes" unique_id=2108644454 instance=ExtResource("15_ir15t")]
+[node name="yellow_fishes2" parent="sea_tilemap/yellow_fishes" unique_id=2108644454 instance=ExtResource("15_ir15t")]
 position = Vector2(-89.28986, -194.44443)
 
-[node name="yellow_fishes3" parent="yellow_fishes" unique_id=624117052 instance=ExtResource("15_ir15t")]
+[node name="yellow_fishes3" parent="sea_tilemap/yellow_fishes" unique_id=624117052 instance=ExtResource("15_ir15t")]
 position = Vector2(-153.84401, 36.995937)
 
-[node name="yellow_fishes4" parent="yellow_fishes" unique_id=592752900 instance=ExtResource("15_ir15t")]
+[node name="yellow_fishes4" parent="sea_tilemap/yellow_fishes" unique_id=592752900 instance=ExtResource("15_ir15t")]
 position = Vector2(-170.13338, -178.09734)
 
-[node name="yellow_fishes5" parent="yellow_fishes" unique_id=1900510437 instance=ExtResource("15_ir15t")]
+[node name="yellow_fishes5" parent="sea_tilemap/yellow_fishes" unique_id=1900510437 instance=ExtResource("15_ir15t")]
 position = Vector2(-55.50451, -64.52808)
 
-[node name="yellow_fishes6" parent="yellow_fishes" unique_id=992378464 instance=ExtResource("15_ir15t")]
+[node name="yellow_fishes6" parent="sea_tilemap/yellow_fishes" unique_id=992378464 instance=ExtResource("15_ir15t")]
 position = Vector2(-89.28984, -130.7768)
 
-[node name="yellow_fishes7" parent="yellow_fishes" unique_id=72174457 instance=ExtResource("15_ir15t")]
+[node name="yellow_fishes7" parent="sea_tilemap/yellow_fishes" unique_id=72174457 instance=ExtResource("15_ir15t")]
 position = Vector2(-114.025604, 144.54254)
 flip_h = true
 
-[node name="yellow_fishes8" parent="yellow_fishes" unique_id=649102824 instance=ExtResource("15_ir15t")]
+[node name="yellow_fishes8" parent="sea_tilemap/yellow_fishes" unique_id=649102824 instance=ExtResource("15_ir15t")]
 position = Vector2(-186.42279, -248.64795)
 flip_h = true
 
-[node name="yellow_fishes2" parent="." unique_id=1797453618 instance=ExtResource("15_ir15t")]
-position = Vector2(2004, 1691.0001)
-scale = Vector2(1.657523, 1.1622865)
-
-[node name="yellow_fishes2" parent="yellow_fishes2" unique_id=407068311 instance=ExtResource("15_ir15t")]
-position = Vector2(-89.28986, -194.44443)
-
-[node name="yellow_fishes3" parent="yellow_fishes2" unique_id=1245901035 instance=ExtResource("15_ir15t")]
-position = Vector2(-153.84401, 36.995937)
-
-[node name="yellow_fishes4" parent="yellow_fishes2" unique_id=709878755 instance=ExtResource("15_ir15t")]
-position = Vector2(-170.13338, -178.09734)
-
-[node name="yellow_fishes5" parent="yellow_fishes2" unique_id=369247009 instance=ExtResource("15_ir15t")]
-position = Vector2(-55.50451, -64.52808)
-
-[node name="yellow_fishes6" parent="yellow_fishes2" unique_id=82171091 instance=ExtResource("15_ir15t")]
-position = Vector2(-89.28984, -130.7768)
-
-[node name="yellow_fishes7" parent="yellow_fishes2" unique_id=2022874344 instance=ExtResource("15_ir15t")]
-position = Vector2(-114.025604, 144.54254)
-flip_h = true
-
-[node name="yellow_fishes8" parent="yellow_fishes2" unique_id=341360350 instance=ExtResource("15_ir15t")]
-position = Vector2(-186.42279, -248.64795)
-flip_h = true
+[node name="music_main" type="AudioStreamPlayer2D" parent="." unique_id=746191029]
+stream = ExtResource("5_iywne")
+volume_db = 9.391
+autoplay = true
 
 [node name="player" parent="." unique_id=81432111 instance=ExtResource("1_uwrxv")]
 position = Vector2(1562, 1379)
