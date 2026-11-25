@@ -23,9 +23,10 @@ func _physics_process(_delta: float):
 	if Input.is_action_pressed("move_left"):
 		anim_sprite.play("left")
 		direction.x = -1	
+		direction.y = 0
 		
 	if Input.is_action_pressed("move_up"):
-		
+		direction.x = 0
 		direction.y = -1
 		
 	if Input.is_action_pressed("move_down"):
