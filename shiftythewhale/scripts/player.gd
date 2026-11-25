@@ -8,6 +8,7 @@ var speed = 300.0
  
 @onready var anim_sprite: AnimatedSprite2D = $orca
 
+ 
 
 
 #physics this is where all movement goes

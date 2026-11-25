@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://55q156k4ksy5"
-path="res://.godot/imported/satrun_final_fr.png-2e756506df22067ab2302e208411ec0f.ctex"
+uid="uid://cwu1io2hivp11"
+path="res://.godot/imported/megy.png-f7a7873c1998da49754efdb2f1e0b6a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://satrun_final_fr.png"
-dest_files=["res://.godot/imported/satrun_final_fr.png-2e756506df22067ab2302e208411ec0f.ctex"]
+source_file="res://animations/megy.png"
+dest_files=["res://.godot/imported/megy.png-f7a7873c1998da49754efdb2f1e0b6a5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp81sfv6y5k73"
-path="res://.godot/imported/venus.png-d45c4a9359c856b1cb3d093f63e131cf.ctex"
+uid="uid://55q156k4ksy5"
+path="res://.godot/imported/satrun_final_fr.png-b3b177990ab8ba819e209ae105cacec7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://venus.png"
-dest_files=["res://.godot/imported/venus.png-d45c4a9359c856b1cb3d093f63e131cf.ctex"]
+source_file="res://tilesets/satrun_final_fr.png"
+dest_files=["res://.godot/imported/satrun_final_fr.png-b3b177990ab8ba819e209ae105cacec7.ctex"]
 
 [params]
 

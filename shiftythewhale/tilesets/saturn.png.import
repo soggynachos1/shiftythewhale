@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkrknyda3bnwn"
-path="res://.godot/imported/sun_pl.png-001ee5ee9ee8808a75795a9c564b857f.ctex"
+uid="uid://40rxyx23tlcq"
+path="res://.godot/imported/saturn.png-497e455604e30fbf94b6688a3adb6384.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sun_pl.png"
-dest_files=["res://.godot/imported/sun_pl.png-001ee5ee9ee8808a75795a9c564b857f.ctex"]
+source_file="res://tilesets/saturn.png"
+dest_files=["res://.godot/imported/saturn.png-497e455604e30fbf94b6688a3adb6384.ctex"]
 
 [params]
 

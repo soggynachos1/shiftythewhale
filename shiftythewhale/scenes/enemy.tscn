@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bspgwdvb2qlrd"]
+
+[ext_resource type="Texture2D" uid="uid://dtxaf1pxq6v5g" path="res://animations/megaladon.png" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://b5j5f1xg5ugio" path="res://scenes/enemy.gd" id="1_md0e3"]
+[ext_resource type="Texture2D" uid="uid://bgnp642gdvv6p" path="res://animations/megaladon_inverted.png" id="2_4ra3w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
+atlas = ExtResource("2_4ra3w")
+region = Rect2(0, 330, 760, 264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
+atlas = ExtResource("2_4ra3w")
+region = Rect2(0, 594, 760, 264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
+atlas = ExtResource("2_4ra3w")
+region = Rect2(0, 66, 760, 264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7p1mj"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(0, 330, 760, 264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(0, 594, 760, 264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ra3w"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(0, 66, 760, 264)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vjjt6"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uy6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4w8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwavj")
+}],
+"loop": 1,
+"name": &"meg_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7p1mj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_md0e3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ra3w")
+}],
+"loop": 1,
+"name": &"meg_right",
+"speed": 2.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vjjt6"]
+
+[node name="enemy" type="CharacterBody2D" unique_id=1704868054]
+motion_mode = 1
+script = ExtResource("1_md0e3")
+
+[node name="meg" type="AnimatedSprite2D" parent="." unique_id=1700415196]
+sprite_frames = SubResource("SpriteFrames_vjjt6")
+animation = &"meg_right"
+autoplay = "meg_right"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1229201128]
+scale = Vector2(15.647472, 5.3782)
+shape = SubResource("CircleShape2D_vjjt6")

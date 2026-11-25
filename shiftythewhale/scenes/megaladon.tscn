@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dtcpd4c0h8dw2"]
+
+[ext_resource type="Texture2D" uid="uid://cwu1io2hivp11" path="res://animations/megy.png" id="2_v6n0n"]
+[ext_resource type="Texture2D" uid="uid://dtxaf1pxq6v5g" path="res://animations/megaladon.png" id="3_v6n0n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kde3"]
+atlas = ExtResource("2_v6n0n")
+region = Rect2(0, 322, 760, 264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgwwj"]
+atlas = ExtResource("2_v6n0n")
+region = Rect2(0, 586, 760, 264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwvpn"]
+atlas = ExtResource("3_v6n0n")
+region = Rect2(0, 66, 760, 264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfvtw"]
+atlas = ExtResource("3_v6n0n")
+region = Rect2(0, 594, 760, 264)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opjg5"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kde3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgwwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwvpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfvtw")
+}],
+"loop": 1,
+"name": &"meg",
+"speed": 2.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_opjg5"]
+radius = 6.872434
+
+[sub_resource type="Animation" id="Animation_4j850"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_v6n0n"]
+resource_name = "move"
+length = 16.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.3333333, 4.9333334, 6.766667, 8.433333, 10.133333, 11.966666, 13.8, 15.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1072, 1150), Vector2(1813, -98.99999), Vector2(2407, 943.99994), Vector2(3237, -180.99994), Vector2(3962.0002, 564), Vector2(4753, 0), Vector2(5442, 891), Vector2(5924, -193), Vector2(6988, 792)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4kde3"]
+_data = {
+&"RESET": SubResource("Animation_4j850"),
+&"move": SubResource("Animation_v6n0n")
+}
+
+[node name="megaladon" type="Node2D" unique_id=166780817]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=490802564]
+scale = Vector2(1.4536756, 1.4207442)
+
+[node name="meg" type="AnimatedSprite2D" parent="Area2D" unique_id=1810892317]
+position = Vector2(19.000002, 17.000002)
+scale = Vector2(1.1876007, 1.2425615)
+sprite_frames = SubResource("SpriteFrames_opjg5")
+animation = &"meg"
+autoplay = "meg"
+frame = 3
+frame_progress = 0.3660697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=678371628]
+position = Vector2(0, 1.9073486e-06)
+scale = Vector2(27.363022, -10.016571)
+shape = SubResource("CircleShape2D_opjg5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=462229463]
+libraries/ = SubResource("AnimationLibrary_4kde3")
+autoplay = &"move"

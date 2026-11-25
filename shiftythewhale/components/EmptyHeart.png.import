@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8udlevget2y0"
-path="res://.godot/imported/underwater_rock_n_sand_tile.png-2eabfc6ae2a3895b56ccfb2b3b57f2a4.ctex"
+uid="uid://b4dlf3qgsk3yc"
+path="res://.godot/imported/EmptyHeart.png-06beb889e3fff62fa6e4c82da6235a8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://underwater_rock_n_sand_tile.png"
-dest_files=["res://.godot/imported/underwater_rock_n_sand_tile.png-2eabfc6ae2a3895b56ccfb2b3b57f2a4.ctex"]
+source_file="res://components/EmptyHeart.png"
+dest_files=["res://.godot/imported/EmptyHeart.png-06beb889e3fff62fa6e4c82da6235a8d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fwqy0i2og5xe"
-path="res://.godot/imported/neptune_nob.png-11dc81da26cd8b443a7c3661d4069049.ctex"
+path="res://.godot/imported/neptune_nob.png-d3c12ad949cb60d74b3e727ce101b611.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://neptune_nob.png"
-dest_files=["res://.godot/imported/neptune_nob.png-11dc81da26cd8b443a7c3661d4069049.ctex"]
+source_file="res://tilesets/neptune_nob.png"
+dest_files=["res://.godot/imported/neptune_nob.png-d3c12ad949cb60d74b3e727ce101b611.ctex"]
 
 [params]
 

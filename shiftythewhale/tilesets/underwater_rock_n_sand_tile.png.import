@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r8xoak0k3inu"
-path="res://.godot/imported/uranus_tosize.png-e22dba2d30c791b0863bf3cc1e096c99.ctex"
+uid="uid://c8udlevget2y0"
+path="res://.godot/imported/underwater_rock_n_sand_tile.png-ef594565437c307e9db1f6ab784f0741.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://uranus_tosize.png"
-dest_files=["res://.godot/imported/uranus_tosize.png-e22dba2d30c791b0863bf3cc1e096c99.ctex"]
+source_file="res://tilesets/underwater_rock_n_sand_tile.png"
+dest_files=["res://.godot/imported/underwater_rock_n_sand_tile.png-ef594565437c307e9db1f6ab784f0741.ctex"]
 
 [params]
 
