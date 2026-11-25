@@ -13162,8 +13162,8 @@ rotation_smoothing_enabled = true
 curve = SubResource("Curve2D_m4url")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1292626454]
-position = Vector2(2750.7996, 2795.6965)
-progress = 21774.58
+position = Vector2(4221, 5610)
+rotation = -0.29997543
 rotates = false
 script = ExtResource("39_m4url")
 

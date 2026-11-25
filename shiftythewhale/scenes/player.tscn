@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ltuw7q5nmli4" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://cfrlysctwwuha" path="res://animations/orca_animation.png" id="2_g2els"]
 [ext_resource type="Texture2D" uid="uid://de7gedsfhlh88" path="res://animations/orca_animation_left_facing.png" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://b617w3oi2xdne" path="res://scenes/health_anim.tscn" id="4_dqkch"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
 atlas = ExtResource("2_qhqgy")
@@ -100,3 +101,31 @@ autoplay = "right"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1607734158]
 scale = Vector2(1, 0.2837838)
 shape = SubResource("CircleShape2D_vjjt6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=269301594]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1330532178]
+offset_left = 35.0
+offset_top = 34.0
+offset_right = 113.0
+offset_bottom = 74.0
+
+[node name="heart" type="TextureRect" parent="CanvasLayer/HBoxContainer" unique_id=902521114]
+custom_minimum_size = Vector2(34.4, 0)
+layout_mode = 2
+
+[node name="health_anim" parent="CanvasLayer/HBoxContainer/heart" unique_id=1654100284 instance=ExtResource("4_dqkch")]
+scale = Vector2(1.5415303, 1.4969665)
+
+[node name="heart3" type="TextureRect" parent="CanvasLayer/HBoxContainer" unique_id=1502519539]
+custom_minimum_size = Vector2(34.4, 0)
+layout_mode = 2
+
+[node name="health_anim" parent="CanvasLayer/HBoxContainer/heart3" unique_id=1331697843 instance=ExtResource("4_dqkch")]
+scale = Vector2(1.5415303, 1.4969665)
+
+[node name="heart2" type="TextureRect" parent="CanvasLayer/HBoxContainer" unique_id=432118211]
+layout_mode = 2
+
+[node name="health_anim" parent="CanvasLayer/HBoxContainer/heart2" unique_id=484081211 instance=ExtResource("4_dqkch")]
+scale = Vector2(1.5415303, 1.4969665)

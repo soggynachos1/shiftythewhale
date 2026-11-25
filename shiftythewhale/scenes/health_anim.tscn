@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://b617w3oi2xdne"]
+
+[ext_resource type="Texture2D" uid="uid://ddefxpg3hp22s" path="res://animations/empty_heart_1.png" id="1_dbm6d"]
+[ext_resource type="Texture2D" uid="uid://p31tnili4qru" path="res://animations/empty_heart_2.png" id="2_6dsfi"]
+[ext_resource type="Texture2D" uid="uid://sd5wsaadwgty" path="res://animations/empty_heart_3.png" id="3_cbp4q"]
+[ext_resource type="Texture2D" uid="uid://ch6vwhuh87pnj" path="res://animations/full_heart_1.png" id="4_ub6rq"]
+[ext_resource type="Texture2D" uid="uid://bcaixinji8omm" path="res://animations/full_heart_2.png" id="5_vj8pe"]
+[ext_resource type="Texture2D" uid="uid://g3kca3nhh6gw" path="res://animations/full_heart_3.png" id="6_yktk7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opjg5"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dbm6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6dsfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cbp4q")
+}],
+"loop": 1,
+"name": &"empty_heart",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ub6rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vj8pe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yktk7")
+}],
+"loop": 1,
+"name": &"full_heart",
+"speed": 2.0
+}]
+
+[node name="health_anim" type="AnimatedSprite2D" unique_id=1654100284]
+scale = Vector2(0.78617346, 0.7637333)
+sprite_frames = SubResource("SpriteFrames_opjg5")
+animation = &"full_heart"
+autoplay = "full_heart"
+frame_progress = 0.76995534
