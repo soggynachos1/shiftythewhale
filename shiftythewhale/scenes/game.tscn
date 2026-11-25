@@ -38,7 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://cjmhtyuwyp62y" path="res://animations/reef_leaf.png" id="28_wljb1"]
 [ext_resource type="Texture2D" uid="uid://cnlos3sqtlqlv" path="res://animations/reef_leaf_2.png" id="29_v2yb1"]
 [ext_resource type="Texture2D" uid="uid://dl0oqjcus8gkc" path="res://animations/reef_leaf_3.png" id="30_js0lu"]
-[ext_resource type="PackedScene" uid="uid://bspgwdvb2qlrd" path="res://scenes/enemy.tscn" id="39_7025r"]
+[ext_resource type="PackedScene" uid="uid://d2x3afi4t2mlo" path="res://scenes/enemy.tscn" id="39_7025r"]
 [ext_resource type="Script" uid="uid://dnv6s0x4auh62" path="res://scenes/path_follow_2d.gd" id="39_m4url"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_suyxu"]
@@ -12513,7 +12513,7 @@ animations = [{
 
 [sub_resource type="Curve2D" id="Curve2D_m4url"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 4221, 5610, 0, 0, 0, 0, 4887, 5404, 0, 0, 0, 0, 5077, 5674, 0, 0, 0, 0, 5173, 6150, 0, 0, 0, 0, 4268, 6292, 0, 0, 0, 0, 2428, 6277, 0, 0, 0, 0, 1048, 5737, 0, 0, 0, 0, 667, 4722, 0, 0, 0, 0, 889, 4135, 0, 0, 0, 0, 1524, 4325, 0, 0, 0, 0, 2349, 4611, 0, 0, 0, 0, 2983, 4976, 0, 0, 0, 0, 2983, 4310, 0, 0, 0, 0, 2952, 3675, 0, 0, 0, 0, 3332, 3358, 0, 0, 0, 0, 3967, 3358, 0, 0, 0, 0, 4522, 3643, 0, 0, 0, 0, 4649, 4119, 0, 0, 0, 0, 5109, 4230, 0, 0, 0, 0, 5569, 4135, 0, 0, 0, 0, 5886, 3437, 0, 0, 0, 0, 5426, 2898, 0, 0, 0, 0, 4871, 2438, 0, 0, 0, 0, 5141, 2041, 0, 0, 0, 0, 5236, 1597, 0, 0, 0, 0, 5093, 1200, 0, 0, 0, 0, 4697, 661, 0, 0, 0, 0, 3491, 677, 0, 0, 0, 0, 2793, 1042, 0, 0, 0, 0, 2365, 1581, 0, 0, 0, 0, 2428, 2057, 0, 0, 0, 0, 2571, 2390, 0, 0, 0, 0, 2761, 2771, 0, 0, 0, 0, 2571, 3231, 0, 0, 0, 0, 1857, 3310, 0, 0, 0, 0, 1286, 2945, 0, 0, 0, 0, 747, 2834, 0, 0, 0, 0, 318, 2787)
+"points": PackedVector2Array(0, 0, 0, 0, 4221, 5610, 0, 0, 0, 0, 4887, 5404, 0, 0, 0, 0, 5077, 5674, 0, 0, 0, 0, 5173, 6150, 0, 0, 0, 0, 4268, 6292, 0, 0, 0, 0, 2428, 6277, 0, 0, 0, 0, 1048, 5737, 0, 0, 0, 0, 667, 4722, 0, 0, 0, 0, 939, 4290, 0, 0, 0, 0, 1524, 4325, 0, 0, 0, 0, 2349, 4611, 0, 0, 0, 0, 2791, 4766, 0, 0, 0, 0, 3019, 4441, 0, 0, 0, 0, 2917, 3813, 0, 0, 0, 0, 3332, 3358, 0, 0, 0, 0, 3967, 3358, 0, 0, 0, 0, 4522, 3643, 0, 0, 0, 0, 4649, 4119, 0, 0, 0, 0, 5109, 4230, 0, 0, 0, 0, 5658, 4147, 0, 0, 0, 0, 5765, 3491, 0, 0, 0, 0, 5426, 2898, 0, 0, 0, 0, 4871, 2438, 0, 0, 0, 0, 5141, 2041, 0, 0, 0, 0, 5236, 1597, 0, 0, 0, 0, 5026, 893, 0, 0, 0, 0, 4252, 679, 0, 0, 0, 0, 3491, 677, 0, 0, 0, 0, 2793, 1042, 0, 0, 0, 0, 2365, 1581, 0, 0, 0, 0, 2428, 2057, 0, 0, 0, 0, 2571, 2390, 0, 0, 0, 0, 2761, 2771, 0, 0, 0, 0, 2571, 3231, 0, 0, 0, 0, 1857, 3310, 0, 0, 0, 0, 1286, 2945, 0, 0, 0, 0, 747, 2834, 0, 0, 0, 0, 318, 2787)
 }
 point_count = 38
 
@@ -13162,12 +13162,10 @@ rotation_smoothing_enabled = true
 curve = SubResource("Curve2D_m4url")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1292626454]
-position = Vector2(3327.392, 6284.3315)
-rotation = -0.29997543
-progress = 3369.57
+position = Vector2(2750.7996, 2795.6965)
+progress = 21774.58
 rotates = false
 script = ExtResource("39_m4url")
 
-[node name="enemy" parent="Path2D/PathFollow2D" unique_id=1704868054 instance=ExtResource("39_7025r")]
-scale = Vector2(1.9973354, 1.9694124)
-wall_min_slide_angle = 0.19896753
+[node name="enemy" parent="Path2D/PathFollow2D" unique_id=19816692 instance=ExtResource("39_7025r")]
+scale = Vector2(0.99265504, 1)
