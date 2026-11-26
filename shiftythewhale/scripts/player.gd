@@ -21,13 +21,6 @@ func take_damage():
 func update_heart_display():
 	for i in range(hearts_lists.size()):
 		hearts_lists[i].visible = i < health
-	
-
-	
-	
-		
-		
-
 
 
 #physics this is where all movement goes

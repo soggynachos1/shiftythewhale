@@ -10,7 +10,11 @@ func _ready():
 	parent.progress_ratio = 0
 
 func _on_area_2d_body_entered(body: Node2D):
-	print("ouch! you've been got!")
+	if body  is Player:
+		body.take_damage()
+		body.update_heart_display()
+	
+	
 	
 	
 func _physics_process(delta: float):
