@@ -139,4 +139,10 @@ scale = Vector2(1.5415303, 1.4969665)
 scale = Vector2(9.910494, -4.186023)
 shape = SubResource("CircleShape2D_opjg5")
 
+[node name="coin_count" type="CanvasLayer" parent="." unique_id=1793238589]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="coin_count" unique_id=606353866]
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
