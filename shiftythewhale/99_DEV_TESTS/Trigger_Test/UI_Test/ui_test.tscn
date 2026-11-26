@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cbr502pw4jmts"]
+
+[ext_resource type="PackedScene" uid="uid://c2000eoocc8q2" path="res://01_UI_Design/Scenes/game_ui.tscn" id="1_lx2wb"]
+[ext_resource type="Script" uid="uid://g32kvs8ccal" path="res://99_DEV_TESTS/UI_Test/ui_test.gd" id="1_sw6vg"]
+
+[node name="UI_Test" type="Control" unique_id=504631312]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sw6vg")
+
+[node name="GameUI" parent="." unique_id=1766199255 instance=ExtResource("1_lx2wb")]
