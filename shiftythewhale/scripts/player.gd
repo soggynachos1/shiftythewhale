@@ -6,6 +6,7 @@ class_name Player
 var speed = 500.0
 var hearts_lists: Array[TextureRect]
 var health = 3
+var coin_counter = 0
 
 func _ready() -> void:
 	var hearts_parent = $CanvasLayer/HBoxContainer
@@ -28,7 +29,14 @@ func update_heart_display():
 func game_over():
 	var scene = load("res://scenes/game_over_ui.tscn") as PackedScene
 	get_tree().change_scene_to_packed.call_deferred(scene)
-
+	
+func set_coin(new_coin_count: int) -> void:
+	coin_counter = new_coin_count
+	
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.is_in_group("coin"):
+		set_coin(coin_counter + 1)
+	
 #physics this is where all movement goes
 func _physics_process(_delta: float):
 	var direction = Input.get_vector("move_down","move_left","move_right","move_up")
@@ -55,7 +63,8 @@ func _physics_process(_delta: float):
 	direction.normalized()
 	
 	move_and_slide()
-	
+
+
 	
 	
 	

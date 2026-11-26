@@ -88,6 +88,9 @@ script = SubResource("GDScript_ah77g")
 [sub_resource type="CircleShape2D" id="CircleShape2D_vjjt6"]
 radius = 122.81155
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_opjg5"]
+radius = 12.834723
+
 [node name="player" type="CharacterBody2D" unique_id=81432111]
 motion_mode = 1
 script = ExtResource("1_g2els")
@@ -129,3 +132,11 @@ layout_mode = 2
 
 [node name="health_anim" parent="CanvasLayer/HBoxContainer/heart2" unique_id=484081211 instance=ExtResource("4_dqkch")]
 scale = Vector2(1.5415303, 1.4969665)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=169283361]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1161461353]
+scale = Vector2(9.910494, -4.186023)
+shape = SubResource("CircleShape2D_opjg5")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
