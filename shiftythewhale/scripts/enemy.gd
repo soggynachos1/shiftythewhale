@@ -10,13 +10,12 @@ func _ready():
 	parent.progress_ratio = 0
 
 func _on_area_2d_body_entered(body: Node2D):
-	if body.is_in_group("Player"):
-		self.z_index = 0
+	print("ouch! you've been got!")
 	
 	
 func _physics_process(delta: float):
 	if parent is PathFollow2D:
-		parent.set_progress(parent.get_progress() + 600 * delta)
+		parent.set_progress(parent.get_progress() + 500 * delta)
 		if parent.progress_ratio > 0.0602 and parent.progress_ratio < 0.2925:
 			enemy_sprite.play("meg_left")	
 		if parent.progress_ratio > 0.2925 and parent.progress_ratio < 0.5635:
