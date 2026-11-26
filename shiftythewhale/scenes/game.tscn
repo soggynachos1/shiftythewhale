@@ -40,6 +40,7 @@
 [ext_resource type="Texture2D" uid="uid://dl0oqjcus8gkc" path="res://animations/reef_leaf_3.png" id="30_js0lu"]
 [ext_resource type="PackedScene" uid="uid://d2x3afi4t2mlo" path="res://scenes/enemy.tscn" id="39_7025r"]
 [ext_resource type="Script" uid="uid://dnv6s0x4auh62" path="res://scenes/path_follow_2d.gd" id="39_m4url"]
+[ext_resource type="PackedScene" uid="uid://blbe7m4nodcuh" path="res://scenes/game_over_ui.tscn" id="41_8ool0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_suyxu"]
 texture = ExtResource("19_e1j6l")
@@ -13169,3 +13170,5 @@ script = ExtResource("39_m4url")
 
 [node name="enemy" parent="Path2D/PathFollow2D" unique_id=19816692 instance=ExtResource("39_7025r")]
 scale = Vector2(0.99265504, 1)
+
+[node name="GameOverUi" parent="." unique_id=186198114 instance=ExtResource("41_8ool0")]

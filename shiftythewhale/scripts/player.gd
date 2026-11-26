@@ -21,7 +21,13 @@ func take_damage():
 func update_heart_display():
 	for i in range(hearts_lists.size()):
 		hearts_lists[i].visible = i < health
-
+	
+	if health <= 0:
+		game_over()
+		
+func game_over():
+	var scene = load("res://scenes/game_over_ui.tscn") as PackedScene
+	get_tree().change_scene_to_packed.call_deferred(scene)
 
 #physics this is where all movement goes
 func _physics_process(_delta: float):
