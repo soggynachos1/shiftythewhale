@@ -13326,3 +13326,150 @@ position = Vector2(3631.9998, 6332.0005)
 
 [node name="coin51" parent="." unique_id=1547607457 instance=ExtResource("42_pr1ej")]
 position = Vector2(3974, 6362)
+
+[node name="coin52" parent="." unique_id=848878603 instance=ExtResource("42_pr1ej")]
+position = Vector2(4240, 6362.0005)
+
+[node name="coin53" parent="." unique_id=1523159510 instance=ExtResource("42_pr1ej")]
+position = Vector2(4468, 6362)
+
+[node name="coin54" parent="." unique_id=2009117330 instance=ExtResource("42_pr1ej")]
+position = Vector2(4702, 6362.0005)
+
+[node name="coin55" parent="." unique_id=2010623806 instance=ExtResource("42_pr1ej")]
+position = Vector2(4974, 6362.0005)
+
+[node name="coin56" parent="." unique_id=774764444 instance=ExtResource("42_pr1ej")]
+position = Vector2(5194, 6362)
+
+[node name="coin57" parent="." unique_id=1039802892 instance=ExtResource("42_pr1ej")]
+position = Vector2(5437, 6392.0005)
+
+[node name="coin58" parent="." unique_id=707499584 instance=ExtResource("42_pr1ej")]
+position = Vector2(5679, 6422)
+
+[node name="coin59" parent="." unique_id=625398483 instance=ExtResource("42_pr1ej")]
+position = Vector2(5922, 6392)
+
+[node name="coin60" parent="." unique_id=1583372942 instance=ExtResource("42_pr1ej")]
+position = Vector2(5806.9995, 6257)
+
+[node name="coin61" parent="." unique_id=965674476 instance=ExtResource("42_pr1ej")]
+position = Vector2(5587, 6221)
+
+[node name="coin62" parent="." unique_id=562427569 instance=ExtResource("42_pr1ej")]
+position = Vector2(5344.9995, 6191)
+
+[node name="coin63" parent="." unique_id=380091174 instance=ExtResource("42_pr1ej")]
+position = Vector2(5182, 6025.0005)
+
+[node name="coin64" parent="." unique_id=1606161504 instance=ExtResource("42_pr1ej")]
+position = Vector2(5181.9995, 5803)
+
+[node name="coin65" parent="." unique_id=761371123 instance=ExtResource("42_pr1ej")]
+position = Vector2(5132, 5587)
+
+[node name="coin66" parent="." unique_id=1193671294 instance=ExtResource("42_pr1ej")]
+position = Vector2(5074, 5380.0005)
+
+[node name="coin67" parent="." unique_id=458617840 instance=ExtResource("42_pr1ej")]
+position = Vector2(4939, 5266)
+
+[node name="coin68" parent="." unique_id=210828771 instance=ExtResource("42_pr1ej")]
+position = Vector2(4767, 5131)
+
+[node name="coin69" parent="." unique_id=17647290 instance=ExtResource("42_pr1ej")]
+position = Vector2(4549, 5161)
+
+[node name="coin70" parent="." unique_id=1941606385 instance=ExtResource("42_pr1ej")]
+position = Vector2(4468, 5266)
+
+[node name="coin71" parent="." unique_id=62474370 instance=ExtResource("42_pr1ej")]
+position = Vector2(4374, 5410)
+
+[node name="coin72" parent="." unique_id=1971780569 instance=ExtResource("42_pr1ej")]
+position = Vector2(4267, 5518)
+
+[node name="coin73" parent="." unique_id=1744012034 instance=ExtResource("42_pr1ej")]
+position = Vector2(1142, 4527)
+
+[node name="coin74" parent="." unique_id=1290328974 instance=ExtResource("42_pr1ej")]
+position = Vector2(1367, 4467)
+
+[node name="coin75" parent="." unique_id=899866861 instance=ExtResource("42_pr1ej")]
+position = Vector2(1633.9999, 4437)
+
+[node name="coin76" parent="." unique_id=2134552602 instance=ExtResource("42_pr1ej")]
+position = Vector2(1887.9999, 4527)
+
+[node name="coin77" parent="." unique_id=2129277259 instance=ExtResource("42_pr1ej")]
+position = Vector2(2086, 4634)
+
+[node name="coin78" parent="." unique_id=122794639 instance=ExtResource("42_pr1ej")]
+position = Vector2(2330, 4808)
+
+[node name="coin79" parent="." unique_id=557369496 instance=ExtResource("42_pr1ej")]
+position = Vector2(2576, 4952.0005)
+
+[node name="coin80" parent="." unique_id=895305717 instance=ExtResource("42_pr1ej")]
+position = Vector2(2775.9998, 5100)
+
+[node name="coin81" parent="." unique_id=1329630489 instance=ExtResource("42_pr1ej")]
+position = Vector2(3029, 5236)
+
+[node name="coin82" parent="." unique_id=93438785 instance=ExtResource("42_pr1ej")]
+position = Vector2(3296, 5236)
+
+[node name="coin83" parent="." unique_id=35386052 instance=ExtResource("42_pr1ej")]
+position = Vector2(3471.9998, 5161)
+
+[node name="coin84" parent="." unique_id=1302193308 instance=ExtResource("42_pr1ej")]
+position = Vector2(3296, 5070)
+
+[node name="coin85" parent="." unique_id=597637915 instance=ExtResource("42_pr1ej")]
+position = Vector2(3260.9998, 4838.0005)
+
+[node name="coin86" parent="." unique_id=133564546 instance=ExtResource("42_pr1ej")]
+position = Vector2(3136.9998, 4604)
+
+[node name="coin87" parent="." unique_id=14908158 instance=ExtResource("42_pr1ej")]
+position = Vector2(3029, 4321)
+
+[node name="coin88" parent="." unique_id=988408750 instance=ExtResource("42_pr1ej")]
+position = Vector2(3137, 4063)
+
+[node name="coin89" parent="." unique_id=1264165869 instance=ExtResource("42_pr1ej")]
+position = Vector2(3403.9998, 4019)
+
+[node name="coin90" parent="." unique_id=457400592 instance=ExtResource("42_pr1ej")]
+position = Vector2(3584.9998, 3959)
+
+[node name="coin91" parent="." unique_id=1663682169 instance=ExtResource("42_pr1ej")]
+position = Vector2(3666.9998, 3747)
+
+[node name="coin92" parent="." unique_id=1422179221 instance=ExtResource("42_pr1ej")]
+position = Vector2(3416, 3747)
+
+[node name="coin93" parent="." unique_id=1456628031 instance=ExtResource("42_pr1ej")]
+position = Vector2(3317, 3637)
+
+[node name="coin94" parent="." unique_id=929525341 instance=ExtResource("42_pr1ej")]
+position = Vector2(3331, 3470)
+
+[node name="coin95" parent="." unique_id=188173015 instance=ExtResource("42_pr1ej")]
+position = Vector2(3549.9998, 3370)
+
+[node name="coin96" parent="." unique_id=646383307 instance=ExtResource("42_pr1ej")]
+position = Vector2(3855, 3340)
+
+[node name="coin97" parent="." unique_id=1541601980 instance=ExtResource("42_pr1ej")]
+position = Vector2(4108, 3430.0002)
+
+[node name="coin98" parent="." unique_id=1306644616 instance=ExtResource("42_pr1ej")]
+position = Vector2(4302, 3637)
+
+[node name="coin99" parent="." unique_id=264582417 instance=ExtResource("42_pr1ej")]
+position = Vector2(4302, 3897)
+
+[node name="coin100" parent="." unique_id=1988326860 instance=ExtResource("42_pr1ej")]
+position = Vector2(4230, 4120)
